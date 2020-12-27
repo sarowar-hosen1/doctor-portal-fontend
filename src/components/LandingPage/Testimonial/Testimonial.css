@@ -1,0 +1,14 @@
+.testimonials{
+    padding:100px 0px;
+}
+.testimonial-card {
+    padding: 30px 40px;
+    margin: 10px;
+    border: 1px solid #f5f0f0;
+    box-shadow: 2px 2px 4px 0px #9a9a9a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.testimonial-card:hover{
+    transform:scaleY(1.05);
+}

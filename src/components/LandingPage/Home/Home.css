@@ -1,0 +1,16 @@
+.home{
+    position: relative;
+    background-image: url(../../../images/chairBg.png);
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #3A4256;
+    z-index: -50;
+}

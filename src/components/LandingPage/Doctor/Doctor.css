@@ -1,0 +1,10 @@
+.doctor-container{
+    padding:50px 0px;
+}
+.doctor-card img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,11 @@
+.appointment-list{
+    background: white;
+    padding:15px;
+    box-shadow: 2px 3px 10px 1px #51776f;
+}
+.appointment-table th, .appointment-table td{
+    font-size: 14px;
+}
+table td, th{
+    font-size: 15px;
+}

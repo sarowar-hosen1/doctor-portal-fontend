@@ -1,0 +1,15 @@
+.feature-conteiner{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.feature-content h1{
+    font-size: 48px;
+    font-family: 'Slabo 36px', serif;
+    margin-bottom: 30px;
+}
+.feature-content p {
+    font-size: 19px;
+    color: #565656;
+    font-family: emoji;
+    text-align: justify;
+}

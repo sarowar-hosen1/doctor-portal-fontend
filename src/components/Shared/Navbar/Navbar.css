@@ -1,0 +1,7 @@
+.nav-link {
+    font-size: 17px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0px 1px 11px white;
+}

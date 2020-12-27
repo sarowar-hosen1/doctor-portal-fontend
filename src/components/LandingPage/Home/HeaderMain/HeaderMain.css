@@ -1,0 +1,19 @@
+.headerMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.headerMain-content{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.headerMain-content h1 {
+    color: #203047;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.header-img{
+    margin: 100px 0px;
+}
+

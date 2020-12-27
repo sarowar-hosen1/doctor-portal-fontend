@@ -1,0 +1,25 @@
+.service-card{
+    cursor: pointer;
+}
+#service-name{
+    position: relative;
+    padding:10px 0px;
+    transition: all 0.5s;
+}
+#service-name::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0;
+    border-bottom: 2px solid #1CC7C1;
+    transition:0.5s;
+}
+.service-card:hover #service-name::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    border-bottom: 2px solid #1CC7C1;
+}

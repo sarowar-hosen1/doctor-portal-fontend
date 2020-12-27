@@ -1,0 +1,7 @@
+.allPatientsList{
+    background: white;
+    padding:20px;
+    height: 550px;
+    overflow: scroll;
+    overflow-x: hidden;
+}

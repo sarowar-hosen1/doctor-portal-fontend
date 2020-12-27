@@ -1,0 +1,32 @@
+.sidebar{
+    height: 100vh;
+    background-color: #11D0DB;
+    padding:10px;
+    position:relative
+}
+.sidebar li {
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+}
+.sidebar i{
+    color: white;
+    font-size: 24px;
+    margin:0px 15px;
+}
+.sidebar a {
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+}
+.sidebar a:hover {
+    color: white;
+    text-decoration: none;
+}
+.sidebar button {
+    position: absolute;
+    bottom:20px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color:white;
+}

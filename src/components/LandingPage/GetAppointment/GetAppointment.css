@@ -1,0 +1,41 @@
+.appointment-container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.appointment-container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../images/appointmentBg.png);
+    opacity: 0.5;
+    z-index: -1;
+}
+.appointment-container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e465ab4;
+}
+.appointment-container img{
+    height: 500px;
+    transform: translateY(-100px);
+}
+
+.appointment-content{
+    margin-top: 50px;
+}
+
+.appointment-content h1 {
+    font-size: 48px;
+    font-family: 'Lobster';
+    color: #3E465A;
+    margin-bottom: 22px;
+    letter-spacing: 2px;
+}
