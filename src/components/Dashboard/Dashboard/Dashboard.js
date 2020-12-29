@@ -12,10 +12,11 @@ const Dashboard = () => {
         setSelectedDate(date);
     }
     useEffect(() => {
+        const userEmail = sessionStorage.getItem('userEmail');
         fetch("https://whispering-tor-01032.herokuapp.com/appointmentsByDate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ date: selectedDate })
+            body: JSON.stringify({ date: selectedDate, email: userEmail })
         })
             .then(res => res.json())
             .then(data => setAppointments(data))

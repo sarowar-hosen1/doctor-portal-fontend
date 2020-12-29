@@ -1,0 +1,18 @@
+.addDoctor{
+    background-color: #defdffcf;
+    widows: 100%;
+    height: 100vh;
+}
+.addDoctor form{
+    background-color: white;
+    padding:50px;
+    width: 75%;
+    margin-left: 120px;
+}
+.addDoctor form .form-control {
+    border: none;
+    background-color: #eaeaeacf;
+    padding: 25px 12px;
+    margin-bottom: 25px;
+    border: 1px solid #d3d2d2cf;
+}

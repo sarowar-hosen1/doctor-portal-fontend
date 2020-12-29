@@ -13,11 +13,13 @@ import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import NoMatch from './components/NoMatch/NoMatch';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Prescription from './components/Prescription/Prescrioption/Prescription';
+import AddDoctor from './components/AddDoctor/AddDoctor/AddDoctor';
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({})
+  console.log(loggedInUser);
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
@@ -40,6 +42,10 @@ function App() {
           </PrivateRoute>
           <PrivateRoute exact path='/deshboard/prescription'>
             <Prescription></Prescription>
+          </PrivateRoute>
+
+          <PrivateRoute exact path='/addDoctor'>
+            <AddDoctor></AddDoctor>
           </PrivateRoute>
 
           <Route exact path='/login'>

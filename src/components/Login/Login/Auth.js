@@ -27,8 +27,10 @@ export const Auth = () => {
                         const signInUser = { name: displayName, email }
                         setLoggedInUser(signInUser)
                         sessionStorage.setItem('user', signInUser.name)
+                        sessionStorage.setItem('userEmail', signInUser.email)
                         getToken()
                         history.replace(from)
+                        location.reload()
                     })
             })
             .catch(err => {
@@ -45,8 +47,10 @@ export const Auth = () => {
                 const signInUser = { name: displayName, email }
                 setLoggedInUser(signInUser)
                 sessionStorage.setItem('user', signInUser.name)
+                sessionStorage.setItem('userEmail', signInUser.email)
                 getToken()
                 history.replace(from)
+                Location.reload()
             })
             .catch(err => {
                 setLoggedInUser(err.message);
