@@ -5,7 +5,7 @@ import PrescriptionTable from '../PrescriptionTable/PrescriptionTable';
 const Prescription = () => {
     const [prescription, setPrescription] = useState([]);
     useEffect(() =>{
-        fetch('https://whispering-tor-01032.herokuapp.com/prescriptions')
+        fetch('https://protected-mesa-99841.herokuapp.com/prescriptions')
         .then(res => res.json())
         .then(data => setPrescription(data))
     },[])

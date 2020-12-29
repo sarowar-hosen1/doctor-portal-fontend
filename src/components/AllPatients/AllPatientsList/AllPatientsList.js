@@ -3,10 +3,9 @@ import AllPatientsTable from '../AllPatientsTable/AllPatientsTable';
 import './AllPatientsList.css';
 
 const AllPatientsList = () => {
-    //https://whispering-tor-01032.herokuapp.com
     const [allPatients, setAllPatients] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allPatients')
+        fetch('https://protected-mesa-99841.herokuapp.com/allPatients')
             .then(res => res.json())
             .then(data => setAllPatients(data))
     }, [])

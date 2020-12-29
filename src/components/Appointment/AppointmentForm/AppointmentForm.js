@@ -25,7 +25,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, title, date }) => {
         data.service = title;
         data.date = date;
         data.create = new Date();
-        fetch('https://whispering-tor-01032.herokuapp.com/addAppointment',{
+        fetch('https://protected-mesa-99841.herokuapp.com/addAppointment',{
             method: 'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify(data)

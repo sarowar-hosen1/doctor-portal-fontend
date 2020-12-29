@@ -13,7 +13,7 @@ const SideBar = () => {
     
     useEffect(() => {
         const token = sessionStorage.getItem('token');
-        fetch('http://localhost:5000/isDoctor', {
+        fetch('https://protected-mesa-99841.herokuapp.com/isDoctor', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body:JSON.stringify({token})
