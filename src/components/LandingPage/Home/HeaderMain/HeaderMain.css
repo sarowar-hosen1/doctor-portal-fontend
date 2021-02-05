@@ -6,6 +6,7 @@
 .headerMain-content{
     margin-bottom: 100px;
     margin-top: 100px;
+    z-index: 2;
 }
 .headerMain-content h1 {
     color: #203047;
