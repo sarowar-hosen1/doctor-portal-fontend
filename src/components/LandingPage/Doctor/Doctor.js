@@ -6,7 +6,7 @@ import './Doctor.css';
 const Doctor = () => {
     const [doctors, setDoctors] = useState([])
     useEffect(() => {
-        fetch('https://protected-mesa-99841.herokuapp.com/doctors')
+        fetch('https://quiet-citadel-67982.herokuapp.com/doctors')
             .then(res => res.json())
             .then(data => setDoctors(data))
     }, [])
@@ -21,7 +21,7 @@ const Doctor = () => {
                             <div className="col-md-4">
                                 <div className="doctor-card">
                                     <div>
-                                        <img src={`https://protected-mesa-99841.herokuapp.com/${doctor.img}`} alt="" />
+                                        <img src={`https://quiet-citadel-67982.herokuapp.com/${doctor.img}`} alt="" />
                                     </div>
                                     <h5 className='text-center'>Dr. {doctor.name}</h5>
                                     <p className='text-center'><i><FcPhone /></i>{doctor.phone}</p>

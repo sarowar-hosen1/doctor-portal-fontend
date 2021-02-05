@@ -10,7 +10,7 @@ const GetAppointment = () => {
                     <img src={doctor} alt="" className="img-fluid"/>
                 </div>
                 <div className="col-md-6 col-sm-8">
-                    <div className="appointment-content">
+                    <div className="appointment-content py-4">
                         <h5 style={{ color:'rgb(28, 199, 193)'}}>Appointment</h5>
                         <h1 className="text-white">Make an appointment today</h1>
                         <p className="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dolores dicta sequi mollitia assumenda amet veniam debitis repellendus cupiditate. Enim accusantium voluptas iste velit reiciendis, dolore dolorum totam id sunt?</p>

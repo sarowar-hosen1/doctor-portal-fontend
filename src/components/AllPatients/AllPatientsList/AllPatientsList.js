@@ -5,7 +5,7 @@ import './AllPatientsList.css';
 const AllPatientsList = () => {
     const [allPatients, setAllPatients] = useState([])
     useEffect(() => {
-        fetch('https://protected-mesa-99841.herokuapp.com/allPatients')
+        fetch('https://quiet-citadel-67982.herokuapp.com/allPatients')
             .then(res => res.json())
             .then(data => setAllPatients(data))
     }, [])

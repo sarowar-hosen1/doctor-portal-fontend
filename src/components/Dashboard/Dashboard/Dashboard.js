@@ -13,7 +13,7 @@ const Dashboard = () => {
     }
     useEffect(() => {
         const userEmail = sessionStorage.getItem('userEmail');
-        fetch("https://protected-mesa-99841.herokuapp.com/appointmentsByDate", {
+        fetch("https://quiet-citadel-67982.herokuapp.com/appointmentsByDate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ date: selectedDate, email: userEmail })

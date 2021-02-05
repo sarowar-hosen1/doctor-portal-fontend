@@ -5,14 +5,16 @@ import firebaseConfig from "./firebaseConfig";
 import { UserContext } from "../../../App"
 import { useHistory, useLocation } from "react-router-dom";
 
-firebase.initializeApp(firebaseConfig)
+if (firebase.app.length) {
+    firebase.initializeApp(firebaseConfig)
+
+}
 
 
 export const Auth = () => {
     const history = useHistory();
     const location = useLocation()
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    console.log(loggedInUser);
     const { from } = location.state || { from: { pathname: "/" } };
 
     // Sing up with email and password
@@ -30,12 +32,11 @@ export const Auth = () => {
                         sessionStorage.setItem('userEmail', signInUser.email)
                         getToken()
                         history.replace(from)
-                        location.reload()
                     })
             })
             .catch(err => {
-                
-                setLoggedInUser({error: err})
+
+                setLoggedInUser({ error: err.message })
             })
     }
 
@@ -50,25 +51,40 @@ export const Auth = () => {
                 sessionStorage.setItem('userEmail', signInUser.email)
                 getToken()
                 history.replace(from)
-                Location.reload()
             })
             .catch(err => {
-                setLoggedInUser(err.message);
+                setLoggedInUser({ error: err.message })
             })
     }
 
     //Get token idToken
-    const getToken =() => {
+    const getToken = () => {
         firebase.auth().currentUser.getIdToken(true)
-        .then((idToken) => {
-            sessionStorage.setItem('token', idToken)
+            .then((idToken) => {
+                sessionStorage.setItem('token', idToken)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
+
+    //sgin out
+
+    const signOut = () => {
+        firebase.auth().signOut()
+        .then(() => {
+            setLoggedInUser({});
+            sessionStorage.removeItem('user');
+            sessionStorage.removeItem('userEmail')
         })
         .catch(err => {
             console.log(err);
         })
     }
+
     return {
         signUp,
         signIn,
+        signOut,
     }
 }
